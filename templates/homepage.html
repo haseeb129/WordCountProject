@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+
+{% block content %}
+
+<form action="{% url 'count' %}">
+
+    <div class="form-group">
+        <label for="comment">Enter your Text here</label>
+        <textarea class="form-control" rows="5" id="comment" name='text'></textarea>
+    </div>
+    <button type="submit" class='btn btn-primary'>Start Count</button>
+
+
+
+</form>
+
+
+{{yoyo}}
+
+{% endblock %}

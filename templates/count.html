@@ -1,0 +1,18 @@
+{%extends "base.html" %}
+
+{% block content %}
+<a href="{%url 'home'%}">Reset Button</a>
+<h3>this is your entered Text </h3>
+<p>
+    {{Orininaltext}}
+</p>
+<h3>result</h3>
+{%for word ,count in wordcount%}
+{{word}}
+<br>
+{{count}}
+<br>
+{% endfor %}
+
+{{wordcount}}
+{% endblock %}
